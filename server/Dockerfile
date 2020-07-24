@@ -5,4 +5,5 @@ WORKDIR /workspace/server
 
 RUN gem install bundler
 RUN gem update
-RUN bundle install
+
+ENV BUNDLE_PATH=/bundle
